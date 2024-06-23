@@ -21,3 +21,36 @@ float multiplicacion (float a, float b){
 float division (float a, float b){
     return a / b;
 }
+
+int main (){
+    float a, b, c;
+    char operador;
+    cout << ingrese el primer valor: ; cin >> a;
+    cout << ingrese el segundo valor: ; cin >> b;
+    cout << ingrese el operador:; cin >> operador;
+    switch (operador){
+        case '+':
+        c = suma (a,b);
+        break;
+        case '-':
+        c = resta (a,b);
+        break;
+        case '*':
+        c = multiplicacion(a,b);
+        break;
+        case '/':
+        if (b != 0){
+            c = division (a,b);
+        }
+        else {
+            cout << indeterminado. << endl;
+            return 0;
+        }
+        break;
+        default:
+        cout << operador no valido.;
+        break;
+    }
+    cout << el valor de << a << operador << b <<  es: << c;
+    return 0;
+}
