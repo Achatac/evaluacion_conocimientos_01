@@ -2,3 +2,22 @@ EJERCICIO 02
 #include <iostream>
 using namespace std;
 int main (){
+int numero1, numero2, contador = 0, i = 1;
+    cout << ingrese el primer numero: ; cin >> numero1;
+    cout << ingrese el segundo numero: ; cin >> numero2;
+    if (numero1 <= 1 || numero2 <= 1){
+        cout << numeros no validos;
+    }
+    else {
+        while (i <= numero1 && i <= numero2){
+            if (numero1 % i == 0 && numero2 % i == 0)
+                contador = contador + 1;
+            i = i + 1;
+        }
+        if (contador > 1)
+            cout << los numeros no son PESI.;
+        else 
+            cout << los numeros son PESI.;
+    }
+    return 0;
+}
