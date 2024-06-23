@@ -4,3 +4,11 @@ using namespace std;
 
 float suma (float numero);
 float factorial (float i);
+
+float suma (float numero){
+    float s = 0;
+    for (float i = 1; i <= numero; i++){
+        s = s + (factorial(i)/(2 * i));
+    }
+    return s;
+}
