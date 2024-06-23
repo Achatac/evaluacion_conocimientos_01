@@ -12,3 +12,11 @@ float suma (float numero){
     }
     return s;
 }
+
+float factorial (float i){
+    float f = 1;
+    for (float j = 2; j <= i;j++){
+        f = f * j;
+    }
+    return f;
+}
