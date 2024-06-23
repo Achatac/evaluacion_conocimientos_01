@@ -20,3 +20,11 @@ float factorial (float i){
     }
     return f;
 }
+
+int main (){
+    float numero, sumatoria; 
+    cout << ingrese el valor de n: ; cin >> numero;
+    sumatoria = suma(numero);
+    cout << la sumatoria es:  << sumatoria;
+    return 0;
+}
